@@ -46,6 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/**common**/
 label,input,textarea,button
 {
      font-size: inherit;
@@ -56,10 +57,69 @@ html{
 }
 body{
     font-family: Poppins,sans-serif;
+    object-fit: cover;
 }
 h1,h2,h3,h4,h5{
     font-family: Sora,sans-serif;
 }
+a{
+	text-decoration: none;
+}
 :root{
+	--primary-color:#fffaf5;
 
 }
+/**		Header	 **/
+.header{
+	padding: 10px 0;
+	background: var(--primary-color);
+
+}
+.container{
+	width: 1440px;
+	max-width: calc(100% - 48px);
+	margin: 0 auto;
+}
+.header__inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navigation__list{
+	display: flex;
+}
+.navigation__link{
+	display: inline-block;
+	font-family: Poppins;
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	padding: 16px 36px;
+	color: #5E6085;
+}
+.navigation__link:hover{
+	font-family: Poppins;
+	font-weight: 600;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	color: #000958;
+}
+.header__box{
+	display: flex;
+	gap: 20px;
+}
+.btn{
+	display: inline-block;
+	min-height: 56px;
+	width: 117px;
+	font-family: Poppins;
+	font-weight: 600;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	line-height: 56px;
+	text-align: center;
+	color: #000958 ;
+	border: 1px solid rgba(0,9,88,0.7);
+	border-radius: 25px;
+}
+
